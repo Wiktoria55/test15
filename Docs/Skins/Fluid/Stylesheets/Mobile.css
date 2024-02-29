@@ -6,15 +6,15 @@
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background-color: #f6a104;
+		background-color: #a09f2b;
 	}
 
 	.title-bar-layout a.logo
 	{
-		width: 208px;
-		height: 61px;
-		background: transparent url('Images/My city.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/My city.png') no-repeat center center;
+		width: 200px;
+		height: 97px;
+		background: transparent url('Images/Component 2.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Component 2.png') no-repeat center center;
 	}
 
 	.search-bar .search-submit
@@ -415,12 +415,12 @@
 
 	.title-bar-layout .logo-wrapper
 	{
-		min-height: 61px;
+		min-height: 97px;
 	}
 
 	.menu-icon-container
 	{
-		min-height: 61px;
+		min-height: 97px;
 	}
 
 	.off-canvas-wrapper-inner .main-section > .outer-row
@@ -972,6 +972,7 @@
 
 	.search-bar .search-field
 	{
+		font-family: Cambria;
 		background-color: #ffffff;
 		padding-right: 50px;
 	}
@@ -1031,7 +1032,7 @@
 
 	h1#results-heading
 	{
-		
+		font-family: Cambria;
 	}
 
 	#results-heading

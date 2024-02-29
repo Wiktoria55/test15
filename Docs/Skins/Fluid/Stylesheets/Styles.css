@@ -279,9 +279,9 @@ nav.title-bar
 	padding: 10px 0;
 	line-height: inherit;
 	display: block;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	background-color: #f6a104;
+	padding-top: 0px;
+	padding-bottom: 27px;
+	background-color: #a09f2b;
 }
 
 nav.title-bar .menu-icon
@@ -292,8 +292,9 @@ nav.title-bar .menu-icon
 .off-canvas-wrapper-inner nav.title-bar .outer-row
 {
 	padding: 0 1em;
-	padding-left: 1em;
+	padding-left: 2em;
 	padding-right: 1em;
+	max-width: 100%;
 }
 
 .title-bar-layout
@@ -324,7 +325,7 @@ nav.title-bar .menu-icon
 	display: flex;
 	flex: 0 1 auto;
 	order: 1;
-	min-height: 61px;
+	min-height: 97px;
 	align-self: center;
 	justify-content: flex-start;
 }
@@ -336,11 +337,11 @@ nav.title-bar .menu-icon
 	margin: 0;
 	z-index: 1;
 	display: block;
-	width: 208px;
-	height: 61px;
+	width: 200px;
+	height: 97px;
 	align-self: center;
-	background: transparent url('Images/My city.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/My city.png') no-repeat center center;
+	background: transparent url('Images/Component 2.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Component 2.png') no-repeat center center;
 }
 
 .title-bar-container
@@ -543,7 +544,7 @@ html[dir='rtl'] .sidenav-layout
 	overflow: auto;
 	width: 20%;
 	display: block;
-	background-color: #313336;
+	background-color: #1e3219;
 }
 
 .sidenav-wrapper ul ul.is-accordion-submenu
@@ -1007,13 +1008,13 @@ div.central-dropdown-content > a:hover
 
 .menu-icon-container
 {
-	min-height: 61px;
+	min-height: 97px;
 }
 
 .off-canvas-wrapper-inner .outer-row
 {
-	max-width: 100%;
 	padding-left: 0em;
+	max-width: 100%;
 	padding-right: 0em;
 }
 
@@ -1075,7 +1076,8 @@ div.central-dropdown-content > a:hover
 
 .micro-content-proxy.faq
 {
-	
+	color: #b8b82e;
+	font-family: Cambria;
 }
 
 .micro-content-proxy.faq .micro-content-phrase span
@@ -2002,7 +2004,7 @@ h1#results-heading
 
 .sidenav-container ul ul
 {
-	background-color: #313336;
+	background-color: #1e3219;
 }
 
 .sidenav-container

@@ -58,7 +58,7 @@
 		background-repeat: no-repeat;
 		padding-top: 15px;
 		padding-bottom: 15px;
-		background-color: #f6a104;
+		background-color: #a09f2b;
 	}
 
 	/* Topbar Menu Styles */
@@ -85,10 +85,10 @@
 	{
 		top: 0;
 		margin: 0;
-		width: 208px;
-		height: 61px;
-		background: transparent url('Images/My city.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/My city.png') no-repeat center center;
+		width: 200px;
+		height: 97px;
+		background: transparent url('Images/Component 2.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Component 2.png') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span
@@ -444,13 +444,13 @@
 
 	.title-bar-layout .logo-wrapper
 	{
-		min-height: 61px;
+		min-height: 97px;
 		flex-basis: 100%;
 	}
 
 	.menu-icon-container
 	{
-		min-height: 61px;
+		min-height: 97px;
 	}
 
 	.off-canvas-wrapper-inner .outer-row

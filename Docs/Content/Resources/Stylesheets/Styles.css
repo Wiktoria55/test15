@@ -96,18 +96,24 @@ img
 	border: none;
 	max-width: 100%;
 	vertical-align: middle;
+	position: inherit;
+	width: 80px;
+	height: 80px;
 }
 
 p
 {
-	font-size: 12.0pt;
-	margin-bottom: 20px;
 	letter-spacing: 0.25px;
 	widows: 3;
 	orphans: 3;
 	font-family: 'Century Gothic';
-	margin-top: 18px;
-	line-height: 18pt;
+	size: inherit;
+	margin-left: 0;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin: 5px;
+	font-size: 14.0pt;
+	line-height: 20pt;
 }
 
 p.table-text
@@ -192,12 +198,13 @@ p.TOC2
 p.TOC3
 {
 	color: #313336;
-	font-size: 13pt;
 	line-height: 21pt;
 	font-weight: normal;
 	margin-bottom: 10px;
 	margin-left: 1in;
 	margin-top: 10px;
+	font-size: 15pt;
+	page-break-before: inherit;
 }
 
 /* Headings */
@@ -211,19 +218,25 @@ h1
 	font-family: 'Century Gothic';
 	margin-bottom: 0;
 	margin-top: 0;
+	page-break: inherit;
+	page-break-before: always;
 }
 
 h2
 {
 	font-weight: bold;
-	font-size: 18.0pt;
 	page-break-before: always;
+	font-size: 24pt;
+	color: #20341b;
+	font-family: 'Century Gothic';
 }
 
 h3
 {
 	font-weight: bold;
-	font-size: 14.0pt;
+	font-family: 'Century Gothic';
+	page-break-before: always;
+	font-size: 25pt;
 }
 
 h4
@@ -263,6 +276,7 @@ div.home-tiles	/*This is a custom responsive layout row style (div class) in you
 	mc-grid-row: true;
 	margin-left: auto;
 	margin-right: auto;
+	color: #e4e33a;
 }
 
 div.home-tiles::before
@@ -447,9 +461,10 @@ MadCap|breadcrumbsProxy
 
 a
 {
-	color: #f6a104;
 	font-family: 'Century Gothic';
-	font-size: 10pt;
+	color: #c4c431;
+	size: inherit;
+	font-size: 15pt;
 }
 
 a:link
@@ -469,22 +484,22 @@ MadCap|dropDown
 	mc-image-spacing: 10px;
 	mc-open-image: url('../Images/Minus.png');
 	mc-closed-image: url('../Images/Plus.png');
-	padding: 10px 0;
+	padding: 5px 0 4px;
 }
 
 MadCap|dropDownBody
 {
-	padding: 10px 30px 0;
+	padding: 6px 30px 0;
 }
 
 MadCap|dropDownHotspot
 {
 	cursor: hand;
 	text-decoration: none;
-	color: #313336;
-	font-size: 20pt;
 	font-weight: bold;
 	border-bottom: none;
+	font-size: 14pt;
+	color: #6f6e20;
 }
 
 MadCap|expandingBody
@@ -589,8 +604,8 @@ p.frame-footer-text
 
 div.home-footer
 {
-	background-color: #f6a104;
-	padding: 2% 5%;
+	background-color: #a09f2b;
+	padding: 0% 3% 0% 4%;
 }
 
 .home-footer-logo
@@ -614,6 +629,15 @@ p.footer-sub
 	color: #FFFFFF;
 	font-size: 14pt;
 	margin-top: 14px;
+}
+
+MadCap|dropDownHead
+{
+	font-style: inherit;
+	font-family: 'Century Gothic';
+	color: #20341b;
+	size: inherit;
+	font-size: 14pt;
 }
 
 @media only screen and (max-width: 1279px)
@@ -755,6 +779,7 @@ p.footer-sub
 	{
 		margin-bottom: 10px;
 		margin-top: 10px;
+		font-size: 15pt;
 	}
 
 	p.table-text
@@ -773,20 +798,21 @@ p.footer-sub
 
 	h2
 	{
-		font-size: 21pt;
-		font-weight: normal;
 		line-height: 23pt;
 		margin-bottom: 18px;
 		margin-top: 40px;
+		font-size: 20pt;
+		mc-heading-level: 2;
+		font-weight: bold;
 	}
 
 	h3
 	{
-		font-size: 15pt;
 		font-weight: bold;
 		line-height: 17pt;
 		margin-bottom: 15px;
 		margin-top: 40px;
+		font-size: 20pt;
 	}
 
 	/* Links */
@@ -797,13 +823,44 @@ p.footer-sub
 		mc-format: '{quote}{para}{quote} {pageref}';
 		text-decoration: none;
 	}
+
+	li.listapkt
+	{
+		line-height: 8 pt;
+	}
+
+	p.Variables
+	{
+		line-height: 8;
+	}
+
+	p.p
+	{
+		font-size: 11pt;
+		page-break-before: inherit;
+		line-height: 22pt;
+	}
+
+	p.TOC3
+	{
+		font-weight: bold;
+		page-break-before: avoid;
+	}
+
+	p.TOC1
+	{
+		font: inherit;
+		font-weight: bold;
+		page-break-after: avoid;
+	}
 }
 
 li.listapkt
 {
-	font-size: 12pt;
 	font-family: 'Century Gothic';
 	color: #000000;
+	line-height: 12 pt;
+	font-size: 14pt;
 }
 
 a.link2
@@ -817,7 +874,7 @@ a.link3
 {
 	color: #f6a104;
 	font-family: 'Century Gothic';
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
 p.lista2
@@ -830,5 +887,187 @@ p.lista2
 	font-family: 'Century Gothic';
 	margin-top: 18px;
 	line-height: 18pt;
+}
+
+p.p
+{
+	margin-bottom: 20px;
+	letter-spacing: 0.25px;
+	widows: 3;
+	orphans: 3;
+	font-family: 'Century Gothic';
+	margin-top: 18px;
+	line-height: 18pt;
+	color: #f50522;
+	italic: inherit;
+	font-style: italic;
+	font-size: 6pt;
+	font-weight: bold;
+}
+
+p.Variables
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 10pt;
+	font-size: 10.0pt;
+}
+
+h1.h11
+{
+	font-weight: bold;
+	text-transform: capitalize;
+	font-family: 'Century Gothic';
+	margin-bottom: 0;
+	margin-top: 0;
+	text-align: center;
+	color: #111b0e;
+	margin: 10px;
+	font-size: 22pt;
+	print-supprt: inherit;
+	page-break-before: always;
+}
+
+img.line
+{
+	border: none;
+	max-width: 100%;
+	vertical-align: middle;
+	position: inherit;
+	width: 1500px;
+	height: 2px;
+}
+
+img.main
+{
+	border: none;
+	max-width: 100%;
+	vertical-align: middle;
+	position: inherit;
+	heigh: inherit;
+	padding: 0px;
+	width: 1500px;
+	height: 280px;
+}
+
+MadCap|dropDownHead.main1
+{
+	font-family: 'Century Gothic';
+	color: #20341b;
+	text-align: left;
+	font-size: 18pt;
+}
+
+p.pmainpage
+{
+	letter-spacing: 0.25px;
+	widows: 3;
+	orphans: 3;
+	font-family: 'Century Gothic';
+	size: inherit;
+	margin-left: 0;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin: 5px;
+	font-size: 14.0pt;
+	line-height: 16pt;
+}
+
+body.snippet
+{
+	color: #313336;
+	font-family: Arial, Avenir, Myriad;
+	size: inherit;
+	font-size: 12pt;
+}
+
+MadCap|dropDownHead.mcp1
+{
+	font-style: inherit;
+	font-family: 'Century Gothic';
+	color: #20341b;
+	text-align: left;
+	font-size: 17pt;
+	line-height: 10pt;
+}
+
+p.mainp
+{
+	letter-spacing: 0.25px;
+	widows: 3;
+	orphans: 3;
+	font-family: 'Century Gothic';
+	size: inherit;
+	margin-left: 0;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font-size: 14.0pt;
+	text-align: center;
+	line-height: 25pt;
+	margin: 20px;
+}
+
+img.imageforarticle
+{
+	border: none;
+	max-width: 100%;
+	vertical-align: middle;
+	position: inherit;
+	width: 431px;
+	height: 328px;
+}
+
+MadCap|dropDownHead.mcp2
+{
+	font-style: inherit;
+	font-family: 'Century Gothic';
+	color: #20341b;
+	text-align: left;
+	font-size: 17pt;
+	line-height: 10pt;
+}
+
+img.line1
+{
+	border: none;
+	max-width: 100%;
+	vertical-align: middle;
+	position: inherit;
+	width: 1500px;
+	heigh: inherit;
+	line-height: 12pt;
+	height: 1px;
+}
+
+img.logoimg
+{
+	border: none;
+	max-width: 100%;
+	position: inherit;
+	width: 80px;
+	height: 80px;
+}
+
+img.fotimg
+{
+	border: none;
+	max-width: 100%;
+	position: inherit;
+	widtj: inherit;
+	heigh: inherit;
+	height: 80px;
+	width: 150px;
+}
+
+MadCap|dropDownHead.text3
+{
+	
+}
+
+MadCap|dropDownHead.fdfsdf
+{
+	font-size: 14pt;
+	color: #20341b;
+	font-weight: bolder;
 }
 

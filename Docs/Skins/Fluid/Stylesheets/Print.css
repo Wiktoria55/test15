@@ -29,7 +29,7 @@
 	.sidenav-wrapper
 	{
 		display: none;
-		background-color: #313336;
+		background-color: #1e3219;
 	}
 
 	.sidenav-wrapper ul.menu
@@ -287,7 +287,7 @@
 	nav.title-bar
 	{
 		background-repeat: no-repeat;
-		background-color: #f6a104;
+		background-color: #a09f2b;
 	}
 
 	.off-canvas-wrapper-inner nav.title-bar .outer-row
@@ -414,8 +414,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/My city.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/My city.png') no-repeat center center;
+		background: transparent url('Images/Component 2.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/Component 2.png') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -1129,7 +1129,7 @@
 
 	.sidenav-container ul ul
 	{
-		background-color: #313336;
+		background-color: #1e3219;
 	}
 
 	.sidenav-container
